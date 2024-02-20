@@ -1,0 +1,40 @@
+<!-- Menu Icon -->
+<button *ngIf="!sidenav.opened" mat-icon-button (click)="sidenav.toggle()" class="burger-menu">
+    <mat-icon>menu</mat-icon>
+</button>
+
+<!-- SideNav -->
+<mat-sidenav-container class="sidenav-container">
+
+  <mat-sidenav #sidenav mode="over" position="start" >
+
+    <!-- Title -->
+    <div class="sidenav-title">
+      Tim & Mari
+    </div>
+
+    <!-- Close Button -->
+    <button mat-icon-button (click)="sidenav.toggle()" class="exit-sidenav">
+      <mat-icon>close</mat-icon>
+    </button>
+
+    <!-- Router List -->
+    <mat-nav-list>
+      <a
+        mat-list-item
+        *ngFor="let link of navLinks"
+        routerLinkActive="active"
+        [routerLink]="link.path"
+        (click)="sidenav.toggle()">
+        {{ link.label }}
+      </a>
+    </mat-nav-list>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

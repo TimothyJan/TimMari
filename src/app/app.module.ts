@@ -14,6 +14,7 @@ import { OurStoryComponent } from './components/our-story/our-story.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { MomentsComponent } from './components/moments/moments.component';
 import { HomeComponent } from './components/home/home.component';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HomeComponent } from './components/home/home.component';
     OurStoryComponent,
     TimelineComponent,
     MomentsComponent,
-    HomeComponent
+    HomeComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
