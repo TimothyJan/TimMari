@@ -15,8 +15,8 @@ mat-sidenav {
 
 .burger-menu {
   position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
+  top: 12px;
+  left: 12px;
   z-index: 20;
 }
 
