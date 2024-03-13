@@ -35,3 +35,12 @@ mat-sidenav {
   text-transform: none;
   letter-spacing: 0em;
 }
+
+.sidenav-img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sidenav-img img {
+  width:100px;
+}
