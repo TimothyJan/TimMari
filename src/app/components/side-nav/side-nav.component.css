@@ -44,3 +44,39 @@ mat-sidenav {
 .sidenav-img img {
   width:100px;
 }
+
+@media screen and (min-width: 768px) {
+  .nav-bar{
+    justify-content: center;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  ul{
+    margin: 0rem;
+    padding: 0rem;
+    list-style: none;
+  }
+
+  .nav-bar-list{
+    flex-wrap: wrap;
+    max-width: 860px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .nav-bar-list-items{
+    display: list-item;
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .nav-bar-list-items-anchor{
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+  }
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-side-nav',
@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './side-nav.component.css'
 })
 export class SideNavComponent {
+  isLargeScreen: boolean = true;
 
   navLinks = [
     { path: '/home', label: 'Home' },
@@ -16,6 +17,17 @@ export class SideNavComponent {
     // { path: '/function-key-5', label: 'Games' },
   ];
 
-  constructor() {}
+  constructor() {
+    this.checkScreenSize();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event:any) {
+    this.checkScreenSize();
+  }
+
+  checkScreenSize() {
+    this.isLargeScreen = window.innerWidth > 768; // Adjust breakpoint as needed
+  }
 
 }
