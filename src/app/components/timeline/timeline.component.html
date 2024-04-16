@@ -1,6 +1,10 @@
 <ul>
   <li *ngFor="let item of dataList; index as i">
     <div class="date" [style.background]="colorList[i]">{{ item.date | date }}</div>
+    <app-carousel
+      *ngIf="i!=0"
+      [date]="item.date">
+    </app-carousel>
     <div class="title">{{ item.title }}</div>
     <div class="descr">{{ item.summary }}</div>
   </li>

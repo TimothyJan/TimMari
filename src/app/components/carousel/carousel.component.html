@@ -1,0 +1,7 @@
+<div class="carousel" #carousel>
+  <div class="slide" *ngFor="let item of items">
+    <img [src]="item.imageUrl" alt="Slide {{ item.id }}">
+  </div>
+  <a *ngIf="items.length>1" class="prev" (click)="prevSlide()">&#10094;</a>
+  <a *ngIf="items.length>1" class="next" (click)="nextSlide()">&#10095;</a>
+</div>

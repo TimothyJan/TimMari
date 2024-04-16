@@ -14,6 +14,8 @@ import { MomentsComponent } from './components/moments/moments.component';
 import { HomeComponent } from './components/home/home.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { HeaderComponent } from './components/header/header.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,13 +27,15 @@ import { HeaderComponent } from './components/header/header.component';
     HomeComponent,
     SideNavComponent,
     HeaderComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
