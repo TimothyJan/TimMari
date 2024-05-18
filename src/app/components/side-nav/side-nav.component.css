@@ -7,8 +7,7 @@
 }
 
 mat-sidenav {
-  /* width: 150px; */
-  width: 300px;
+  width: 285px;
   height: 100%;
   padding: 32px;
 }
@@ -23,7 +22,7 @@ mat-sidenav {
 .exit-sidenav {
   position: absolute;
   top: 1.5rem;
-  left: 15rem;
+  left: 14rem;
   z-index: 100;
 }
 
