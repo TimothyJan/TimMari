@@ -8,7 +8,7 @@ import { TimeLineDesc } from '../../models/timeline-desc';
   styleUrl: './timeline.component.css'
 })
 export class TimelineComponent implements OnInit{
-  data:any = timelineData
+  data:any = timelineData;
   dataList: TimeLineDesc[] = [];
   colorList: string[] = [];
 
