@@ -10,12 +10,12 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
-import { MomentsComponent } from './components/moments/moments.component';
 import { HomeComponent } from './components/home/home.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DateGeneratorComponent } from './components/date-generator/date-generator.component';
 
 @NgModule({
   declarations: [
@@ -23,11 +23,11 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     LayoutComponent,
     TimelineComponent,
-    MomentsComponent,
     HomeComponent,
     SideNavComponent,
     HeaderComponent,
     CarouselComponent,
+    DateGeneratorComponent,
   ],
   imports: [
     BrowserModule,

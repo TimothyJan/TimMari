@@ -11,9 +11,7 @@ export class SideNavComponent {
   navLinks = [
     { path: '/home', label: 'Home' },
     { path: '/timeline', label: 'Timeline' },
-    { path: '/moments', label: 'Moments' },
-    // { path: '/jar-of-memories', label: 'Jar of Memories' },
-    // { path: '/function-key-5', label: 'Games' },
+    { path: '/date-generator', label: 'Date Generator' },
   ];
 
   constructor() {

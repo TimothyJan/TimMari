@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
-import { MomentsComponent } from './components/moments/moments.component';
+import { DateGeneratorComponent } from './components/date-generator/date-generator.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'timeline', component: TimelineComponent },
-  { path: 'moments', component: MomentsComponent },
+  { path: 'date-generator', component: DateGeneratorComponent },
   // redirect to `home` if there is no path
   {
     path: '',
