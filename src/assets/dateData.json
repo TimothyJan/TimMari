@@ -1,5 +1,14 @@
 {
   "dates": [
+    "Make Ochazuke",
+    "Make Instant Ramen",
+    "Make Oyakodon",
+    "Make pasta",
+    "Make pizza",
+    "Make dumplings",
+    "Make rice paper rolls",
+    "Make Curry",
+    "Make Curry Udon",
     "The Broad",
     "Santa Monica Pier",
     "Downtown Santa Monica",
@@ -46,7 +55,7 @@
     "Pearl Harbor USS Arizona",
     "Round 1",
     "IKEA",
-    "Make dumplings",
+    "Cook",
     "Naomi Takes America",
     "Hollywood Walk of Fame",
     "South Coast Plaza",
@@ -64,7 +73,6 @@
     "Historic Downtown West Covina",
     "Mr. Bones Pumpkin Patch",
     "Los Cerritos Center",
-    "Make Ochazuke",
     "Yosemite",
     "Tunnel Viewpoint",
     "Sequoia National Park",
@@ -113,7 +121,6 @@
     "Santa Barbara, CA",
     "Downtown Santa Barbara",
     "Folded Hills Montecito",
-    "Make Oyakodon",
     "Monterey, California",
     "Monterey Bay Aquarium",
     "Point Lobos State Reserve",
@@ -267,11 +274,8 @@
     "Flaherty's Seafood Grill & Oyster Bar",
     "El Charrito",
     "President Thai",
-    "Hook Burger",
-    "Make Instant Ramen",
     "BJ's Restaurants",
-    "Make pasta",
-    "Make pizza",
+    "Hook Burger",
     "Malibu Seafood Fresh Fish Market & Patio Cafe",
     "Anarbagh",
     "Kagura",
@@ -280,9 +284,13 @@
     "Sushi Kiyosuzu",
     "Pocha 88",
     "Holbox",
-    "Make rice paper rolls",
     "Sutadonya",
-    "Tita Celia's"
+    "Tita Celia's",
+    "Tender Greens",
+    "Popeyes",
+    "Waka Sushi",
+    "Ding's Garden",
+    "Kang Kang Food Court"
   ],
   "desserts": [
     "Oakobing",
@@ -336,7 +344,10 @@
     "Ube Overload",
     "New Zealand Ice Cream",
     "Churned",
-    "Roots & Rye Acai Bowl"
+    "Roots & Rye Acai Bowl",
+    "Creamy Boys Ice Cream",
+    "AU79",
+    "SinBala"
   ],
   "hikes": [
     "Eaton Canyon Trail",
@@ -375,5 +386,8 @@
     "Point Dume Cove Trail",
     "Saddle Peak",
     "Point Vicente Beach"
+  ],
+  "Movies": [
+
   ]
 }
