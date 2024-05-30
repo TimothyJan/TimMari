@@ -36,7 +36,7 @@ export class CarouselComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     /** Get all files in timeline date directory */
     for(let i=0; i<this.numOfFiles[this.date]; i++) {
-      this.items.push({ id: i, imageUrl: '../assets/images/Timeline/'+this.date+'/'+i+'.jpg' });
+      this.items.push({ id: i, imageUrl: './assets/images/Timeline/'+this.date+'/'+i+'.jpg' });
     }
   }
 
