@@ -1,0 +1,10 @@
+.info-container {
+  padding-top: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 6px;
+}
+
+.info-container p {
+  text-align: center;
+}

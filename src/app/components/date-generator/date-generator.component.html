@@ -1,5 +1,22 @@
 
-<app-wheel category="dates"></app-wheel>
-<app-wheel category="restaurants"></app-wheel>
-<app-wheel category="desserts"></app-wheel>
-<app-wheel category="hikes"></app-wheel>
+<div class="info-container">
+  <p>
+    In case we can't decide what to do for our dates... And since I document everything...
+    Here is a randomizer of every date, restaurant, dessert and hike we've ever done!
+  </p>
+</div>
+
+<mat-tab-group>
+  <mat-tab label="Activity">
+    <app-wheel category="dates"></app-wheel>
+  </mat-tab>
+  <mat-tab label="Restaurants">
+    <app-wheel category="restaurants"></app-wheel>
+  </mat-tab>
+  <mat-tab label="Desserts">
+    <app-wheel category="desserts"></app-wheel>
+  </mat-tab>
+  <mat-tab label="Hikes">
+    <app-wheel category="hikes"></app-wheel>
+  </mat-tab>
+</mat-tab-group>
