@@ -16,6 +16,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DateGeneratorComponent } from './components/date-generator/date-generator.component';
+import { WheelComponent } from './components/wheel/wheel.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { DateGeneratorComponent } from './components/date-generator/date-generat
     HeaderComponent,
     CarouselComponent,
     DateGeneratorComponent,
+    WheelComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,7 @@ import { DateGeneratorComponent } from './components/date-generator/date-generat
     BrowserAnimationsModule,
     ReactiveFormsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

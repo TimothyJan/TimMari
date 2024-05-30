@@ -1,0 +1,16 @@
+
+<div class="wheel-container">
+
+  <div class="wheel-title">
+    {{ this.title }}
+  </div>
+
+  <div class="wheel" [style.transform]="wheelTransform">
+    <div class="segment" *ngFor="let option of options; let i = index" [style.transform]="'rotate(' + (i * segmentAngle) + 'deg)'">
+      <div class="segment-text">{{ option }}</div>
+    </div>
+  </div>
+  <div class="start-button-container">
+    <button class="start-button" (click)="spin()">Spin the Wheel</button>
+  </div>
+</div>

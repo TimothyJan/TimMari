@@ -1,0 +1,101 @@
+/* src/app/spin-wheel/spin-wheel.component.css */
+.wheel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.wheel {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid #333;
+  overflow: hidden;
+  transform-origin: center;
+  transition: transform 5s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.segment {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: #AEE2FF;
+  transform-origin: 100% 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.segment:nth-child(even) {
+  background-color: #B9F3FC;
+}
+
+.segment-text {
+  position: absolute;
+  /* width: 60px;  */
+  /* height: 60px; */
+  width: 25%; /* Adjust to fit within the segment */
+  height: 25%; /* Adjust to fit within the segment */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px; /* Smaller font size for readability */
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+/* Button */
+
+.start-button-container {
+  display: absolute;
+  justify-content: center;
+  padding: 12px;
+}
+
+.start-button {
+  /* display: flex; */
+  /* height: 140px; */
+  /* width: 140px; */
+  height: 70px;
+  width: 140px;
+  border-radius: 0%;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  color: #f5f5f5;
+  background-color: #93C6E7;
+  outline: none;
+  border: none;
+  user-select: none;
+
+  z-index: 300;
+
+  transition:
+    height .1s ease-in,
+    width .2s ease-in,
+    color .1s ease-in,
+    background-color .1s ease-in;
+
+  &:hover {
+    /* height: 150px; */
+    height: 75px;
+    width: 150px;
+    background-color: #AEE2FF;
+    box-shadow: 0px 0px 44px rgba(17, 17, 17, 0.25);
+  }
+
+  &:active {
+    /* height: 135px; */
+    height: 65px;
+    width: 135px;
+    color: #93C6E7;
+    background-color: #459A9A;
+    box-shadow: none;
+
+    animation: shaking .15s ease-in-out infinite;
+  }
+}
