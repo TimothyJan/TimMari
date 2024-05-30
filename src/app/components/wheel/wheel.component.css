@@ -6,6 +6,21 @@
   margin-top: 50px;
 }
 
+.title-container {
+  display: flex;
+}
+
+.wheel-title {
+  font-family: Forum;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.25;
+  text-transform: none;
+  letter-spacing: 0em;
+  text-align: center;
+  word-break: break-word;
+}
+
 .wheel {
   position: relative;
   width: 300px;
@@ -49,18 +64,15 @@
 }
 
 /* Button */
-
-.start-button-container {
+.spin-button-container {
   display: absolute;
   justify-content: center;
   padding: 12px;
 }
 
-.start-button {
-  /* display: flex; */
+.spin-button {
   /* height: 140px; */
-  /* width: 140px; */
-  height: 70px;
+  height: 50px;
   width: 140px;
   border-radius: 0%;
   font-family: 'Dosis', sans-serif;
@@ -82,7 +94,7 @@
 
   &:hover {
     /* height: 150px; */
-    height: 75px;
+    height: 55px;
     width: 150px;
     background-color: #AEE2FF;
     box-shadow: 0px 0px 44px rgba(17, 17, 17, 0.25);
@@ -90,12 +102,22 @@
 
   &:active {
     /* height: 135px; */
-    height: 65px;
+    height: 45px;
     width: 135px;
     color: #93C6E7;
     background-color: #459A9A;
     box-shadow: none;
-
     animation: shaking .15s ease-in-out infinite;
   }
+}
+
+/* Image */
+.wheel-img {
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wheel-img img {
+  height:65px;
 }

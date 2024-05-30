@@ -10,6 +10,7 @@ export class WheelComponent implements OnInit {
 
   @Input() category: string = "";
   title: string = "";
+  imageUrl: string = "";
   options: string[] = [];
   segmentAngle: number = 0;
   wheelTransform: string = '';
@@ -18,32 +19,10 @@ export class WheelComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    switch(this.category) {
-      case "dates":
-        this.title = "Dates";
-        this.options = data["dates"];
-        this.options.push("NEW DATE");
-        break;
-      case "restaurants":
-        this.title = "Restaurants";
-        this.options = data["restaurants"];
-        this.options.push("NEW RESTAURANT");
-        break;
-      case "desserts":
-        this.title = "Desserts";
-        this.options = data["desserts"];
-        this.options.push("NEW DESSERT");
-        break;
-      case "hikes":
-        this.title = "Hikes";
-        this.options = data["hikes"];
-        this.options.push("NEW HIKE");
-        break;
-      default:
-        console.log("Issue receiving input 'category'");
-        break;
-    }
-    this.segmentAngle = 360 / this.options.length;
+    this.setTitle();
+    this.setImage();
+    this.setOptions();
+    this.setSegmentAngle();
   }
 
   spin() {
@@ -60,6 +39,74 @@ export class WheelComponent implements OnInit {
       const winningIndex = Math.floor((normalizedDegree + this.segmentAngle / 2) % 360 / this.segmentAngle);
       alert('Winning Option: ' + this.options[winningIndex]);
     }, 5000); // Match the duration of the CSS transition
+  }
+
+  setTitle() {
+    switch(this.category) {
+      case "dates":
+        this.title = "Dates";
+        break;
+      case "restaurants":
+        this.title = "Restaurants";
+        break;
+      case "desserts":
+        this.title = "Desserts";
+        break;
+      case "hikes":
+        this.title = "Hikes";
+        break;
+      default:
+        console.log("Issue receiving input 'category' for title");
+        break;
+    }
+  }
+
+  setImage() {
+    switch(this.category) {
+      case "dates":
+        this.imageUrl = "assets/images/WasaPon/Pon1.jpg";
+        break;
+      case "restaurants":
+        this.imageUrl = "assets/images/WasaPon/Wasa2.jpg";
+        break;
+      case "desserts":
+        this.imageUrl = "assets/images/WasaPon/Pon2.jpg";
+        break;
+      case "hikes":
+        this.imageUrl = "assets/images/WasaPon/Wasa3.jpg";
+        break;
+      default:
+        console.log("Issue receiving input 'category' for images");
+        break;
+    }
+  }
+
+  setOptions() {
+    switch(this.category) {
+      case "dates":
+        this.options = data["dates"];
+        this.options.push("NEW DATE");
+        break;
+      case "restaurants":
+        this.options = data["restaurants"];
+        this.options.push("NEW RESTAURANT");
+        break;
+      case "desserts":
+        this.options = data["desserts"];
+        this.options.push("NEW DESSERT");
+        break;
+      case "hikes":
+        this.options = data["hikes"];
+        this.options.push("NEW HIKE");
+        break;
+      default:
+        console.log("Issue receiving input 'category' for options");
+        break;
+    }
+  }
+
+  setSegmentAngle() {
+    this.segmentAngle = 360 / this.options.length;
   }
 
 }

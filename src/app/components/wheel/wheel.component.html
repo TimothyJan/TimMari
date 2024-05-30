@@ -1,8 +1,13 @@
 
 <div class="wheel-container">
 
-  <div class="wheel-title">
-    {{ this.title }}
+  <div class="title-container">
+    <div class="wheel-title">
+      {{ this.title }}
+    </div>
+    <div class="wheel-img">
+      <img [src]="imageUrl" alt="Wasabi">
+    </div>
   </div>
 
   <div class="wheel" [style.transform]="wheelTransform">
@@ -10,7 +15,10 @@
       <div class="segment-text">{{ option }}</div>
     </div>
   </div>
-  <div class="start-button-container">
-    <button class="start-button" (click)="spin()">Spin the Wheel</button>
+  <div class="wheel-bottom">
+    <div class="spin-button-container">
+      <button class="spin-button" (click)="spin()">Spin the Wheel</button>
+    </div>
   </div>
+
 </div>
