@@ -23,14 +23,29 @@ export class TimelineComponent implements OnInit{
     }
     /** Add colors */
     for(let i = 0; i<this.dataList.length; i++) {
-      this.colorList.push(this.getColorStyle());
+      this.colorList.push(this.getPastelColorStyle());
     }
   }
 
   constructor() {}
 
-  getColorStyle(): string {
-    return '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+  getPastelColorStyle(): string {
+    // return '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+    // Helper function to generate a pastel color component
+    const generatePastelComponent = () => {
+      const min = 128; // Minimum value for a pastel color component
+      const max = 255; // Maximum value for any color component
+      return Math.floor(Math.random() * (max - min) + min);
+    };
+
+    const red = generatePastelComponent();
+    const green = generatePastelComponent();
+    const blue = generatePastelComponent();
+
+    // Convert the RGB values to a hex string
+    const hexColor = `#${red.toString(16).padStart(2, '0')}${green.toString(16).padStart(2, '0')}${blue.toString(16).padStart(2, '0')}`;
+
+    return hexColor;
   }
 
 }
