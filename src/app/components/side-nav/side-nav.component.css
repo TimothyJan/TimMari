@@ -87,7 +87,7 @@ mat-sidenav {
     align-items: center;
     height: 100%;
     text-decoration: none;
-    padding: 2px;
+    padding: 10px;
   }
 
   .nav-bar-list-items-anchor.active {

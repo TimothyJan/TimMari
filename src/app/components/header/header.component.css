@@ -1,13 +1,15 @@
 
 .header {
-  padding: 12px 12px;
+  padding-top: 48px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: center;
-  /* justify-content: space-around; */
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -17,7 +19,7 @@
 .title {
   font-family: Forum;
   font-weight: 400;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   line-height: 1.25;
   text-transform: none;
   letter-spacing: 0em;

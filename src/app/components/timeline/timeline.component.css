@@ -9,6 +9,7 @@ ul {
   list-style: none;
   width: min(60rem, 90%);
   margin-inline: auto;
+  padding-top: 12px;
 }
 
 /* line */
