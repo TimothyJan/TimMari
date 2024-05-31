@@ -15,6 +15,11 @@
   text-align: center;
 }
 
+.home-item img {
+  max-width: 100%;
+  height: auto;
+}
+
 .paragraph-container {
   display: flex;
   justify-content: center;
@@ -23,7 +28,7 @@
 .paragraph-item {
   display: flex;
   align-items: center;
-  padding: 0px;
+  padding: 0px 6px;
   max-width: 550px;
   text-align: center;
   line-height: 1.75;
