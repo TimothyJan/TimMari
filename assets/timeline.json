@@ -31,7 +31,7 @@
   },
   "2023-08-04": {
     "date": "2023-08-04",
-    "summary": "Mari said she was planning to go to Oahu, Hawaii for her vacation, so I invited myself :P. Excellent food, hiking, snorkeling, shave ice, culture and beautiful views every day <3",
+    "summary": "August 4 to August 11. Mari said she was planning to go to Oahu, Hawaii for her vacation, so I invited myself :P. Excellent food, hiking, snorkeling, shave ice, culture and beautiful views every day <3",
     "title": "Oahu, Hawaii"
   },
   "2023-10-06": {
@@ -41,8 +41,13 @@
   },
   "2023-10-20": {
     "date": "2023-10-20",
-    "summary": "Weekend getaway to Yosemite and Sequoia National Park.",
-    "title": "Yosemite&Sequoia"
+    "summary": "Weekend getaway to Yosemite National Park. Tunnel Viewpoint, Vernal Falls via Mist trail, Bridalveil Falls Viewpoint, Valley Viewpoint, Mariposa Grove, Washburn Trail, Fallen Monarch, Bachelor and Three Graces, Grizzly Giant, California Tunnel Tree, Faithful Couple, Clothespin Tree",
+    "title": "Yosemite & Mariposa Grove of giant Sequoias"
+  },
+  "2023-10-21": {
+    "date": "2023-10-21",
+    "summary": "Weekend getaway to Sequoia National Park. Congress Trail, General Sherman Tree, Tough Twins, McKinley Tree, Big rees Trail, Moro Rock, Beetle Rock, Drive to Fresno, Indian Kebab Palace",
+    "title": "Sequoia National Park"
   },
   "2023-11-18": {
     "date": "2023-11-18",
@@ -61,7 +66,7 @@
   },
   "2024-01-11": {
     "date": "2024-01-11",
-    "summary": "Mari showed me around the her hood and I got to meet her brother Masado! We went to Hiroshima, Oita, Fukuoka, Osaka, Kyoto and Tokyo!",
+    "summary": "Jan 11 to Jan 19. Mari showed me around the her hood and I got to meet her brother Masado! We went to Hiroshima, Oita, Fukuoka, Osaka, Kyoto and Tokyo!",
     "title": "Japan"
   },
   "2024-02-10": {
@@ -123,5 +128,15 @@
     "date": "2024-06-02",
     "summary": "Aaron and Josh are back in town so we did a Hollywood day! Wat Thai street food market, WeHo Pride Street Fair, and Melrose blvd shopping. Then ShaWeley joined us for For the Win smashburgers, Mari's first escape room in the US, and 626 Ice Cream!",
     "title": "Weho Pride, Melrose blvd, For the Win, Escape Room, and 626 Ice Cream"
+  },
+  "2024-06-08": {
+    "date": "2024-06-08",
+    "summary": "Corlieu Falls and Red Rock Falls via Lewis Creek National Scenic Trail, Sentinel Meadow Cook’s Meadow Loop Trail, Vernal Falls Trail, Mirror Lake via Valley Loop Trail, Pizza Deck, and Cedar Lodge.",
+    "title": "Yosemite in the Summer part 1"
+  },
+  "2024-06-09": {
+    "date": "2024-06-09",
+    "summary": "Glacier Point, Washburn Point, Sentinel Dome and Taft Point Loop, Smokehouse 41, and Indian Kebab Palace.",
+    "title": "Yosemite in the Summer part 2"
   }
 }
