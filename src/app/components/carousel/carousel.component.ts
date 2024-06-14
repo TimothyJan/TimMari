@@ -12,6 +12,7 @@ export class CarouselComponent implements OnInit, AfterViewInit {
   items:any[] = [];
   files:string[] = [];
   numOfFiles:any = {
+    "2023-05-06": 5,
     "2023-05-14": 4,
     "2023-06-10": 8,
     "2023-06-17": 1,
@@ -31,7 +32,7 @@ export class CarouselComponent implements OnInit, AfterViewInit {
     "2024-03-02": 4,
     "2024-03-16": 6,
     "2024-03-23": 4,
-    "2024-04-06": 3,
+    "2024-04-06": 2,
     "2024-04-13": 4,
     "2024-04-22": 2,
     "2024-04-27": 4,
