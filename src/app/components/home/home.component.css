@@ -48,3 +48,14 @@
   margin-left: auto;
   height:120px;
 }
+
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
