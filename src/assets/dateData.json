@@ -152,7 +152,11 @@
     "Glacier Point",
     "Washburn Point",
     "Outlet Mall",
-    "Outlets at Tejon"
+    "Outlets at Tejon",
+    "Engagement Ring Shopping",
+    "Santa Catalina Island",
+    "Wriggley memorial and botanical garden",
+    "Bison Expedition Tour"
   ],
   "restaurants": [
     "Grand Central Market",
@@ -308,7 +312,10 @@
     "Ding's Garden",
     "Kang Kang Food Court",
     "Pizza Deck",
-    "Smokehouse 41"
+    "Smokehouse 41",
+    "Matsui",
+    "NDMK Fish House",
+    "Lobster Trap"
   ],
   "desserts": [
     "Oakobing",
@@ -365,7 +372,8 @@
     "Roots & Rye Acai Bowl",
     "Creamy Boys Ice Cream",
     "AU79",
-    "SinBala"
+    "SinBala",
+    "Sailor’s Delight"
   ],
   "hikes": [
     "Eaton Canyon Trail",
@@ -413,9 +421,10 @@
     "Glacier Point",
     "Sentinel Dome and Taft Point Loop",
     "Sentinel Dome Trail",
-    "Taft Point Trail"
+    "Taft Point Trail",
+    "Hermit Gultch Trail"
   ],
-  "Movies": [
+  "movies": [
 
   ]
 }
