@@ -20,11 +20,50 @@
   height: auto;
 }
 
+.wedding-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.wedding-date {
+  font-family: Forum;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.25;
+  text-transform: none;
+  letter-spacing: 0em;
+  white-space: pre-wrap;
+  margin: 0.5rem;
+}
+
+.wedding-location {
+  font-family: Forum;
+  font-weight: 400;
+  font-size: 1.625rem;
+  line-height: 1.23;
+  text-transform: none;
+  letter-spacing: 0em;
+  margin-top: 2rem;
+  margin: 0.5rem;
+}
+
 .paragraph-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.paragraph-container p {
+  font-family: "Noto Serif", sans-serif;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+  margin-top: 3rem;
+  max-width: 500px;
+  text-align: center;
 }
 
 .paragraph-item {
@@ -39,7 +78,7 @@
   font-size: 18px;
   font-weight: 500;
   padding: 0px 6px;
-  margin: 12px 0px;
+  margin: 6px 0px;
 }
 
 .paragraph-item img {
