@@ -48,6 +48,7 @@ mat-sidenav {
   .nav-bar{
     justify-content: center;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
   }
