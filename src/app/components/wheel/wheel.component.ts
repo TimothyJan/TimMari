@@ -43,8 +43,8 @@ export class WheelComponent implements OnInit {
 
   setTitle() {
     switch(this.category) {
-      case "dates":
-        this.title = "Dates";
+      case "activities":
+        this.title = "Activities";
         break;
       case "restaurants":
         this.title = "Restaurants";
@@ -63,7 +63,7 @@ export class WheelComponent implements OnInit {
 
   setImage() {
     switch(this.category) {
-      case "dates":
+      case "activities":
         this.imageUrl = "assets/images/WasaPon/Pon1.jpg";
         break;
       case "restaurants":
@@ -83,9 +83,9 @@ export class WheelComponent implements OnInit {
 
   setOptions() {
     switch(this.category) {
-      case "dates":
-        this.options = data["dates"];
-        this.options.push("NEW DATE");
+      case "activities":
+        this.options = data["activities"];
+        this.options.push("NEW ACTIVITY");
         break;
       case "restaurants":
         this.options = data["restaurants"];
