@@ -26,7 +26,7 @@
     "Cuddles",
     "Huntington Gardens",
     "Griffith Observatory",
-    "Santa Anita Mall",
+    "Westfield Santa Anita Mall",
     "Aquarium of the Pacific",
     "Daiso",
     "Maikai Research Pier",
@@ -166,7 +166,10 @@
     "Go bother Sharifi's",
     "Pasadena City Hall",
     "Make Mul-naengmyeon",
-    "Scooter's Jungle"
+    "Scooter's Jungle",
+    "Go bother Tiffany/Mickey",
+    "Go bother Neyer's",
+    "Dodger's game"
   ],
   "restaurants": [
     "Grand Central Market",
@@ -330,7 +333,12 @@
     "Hanuman Thai Eatery",
     "Pasta E Pasta",
     "Bruxie's",
-    "Wadatsumi"
+    "Wadatsumi",
+    "Mills Alley",
+    "Mae Malai Thai House of Noodles",
+    "Lawry's House of Prime Rib",
+    "Westfield Century City",
+    "Two Rodeo"
   ],
   "desserts": [
     "Oakobing",
@@ -392,7 +400,8 @@
     "Bacio di Latte",
     "Sul and Bean",
     "Bruxie's",
-    "T-Swirl Crepe"
+    "T-Swirl Crepe",
+    "Kanomwaan Thai Gelato and Dessert Cafe"
   ],
   "hikes": [
     "Eaton Canyon Trail",
