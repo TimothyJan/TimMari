@@ -157,7 +157,6 @@
     "Santa Catalina Island",
     "Wriggley memorial and botanical garden",
     "Bison Expedition Tour",
-    "Engagement Ring shopping",
     "Fashion Island",
     "Seal Beach",
     "Go bother Vivian/Eric",
@@ -169,7 +168,11 @@
     "Scooter's Jungle",
     "Go bother Tiffany/Mickey",
     "Go bother Neyer's",
-    "Dodger's game"
+    "Dodger's game",
+    "Lake Arrowhead",
+    "Ontario Mills",
+    "Shopping",
+    "Walk around house"
   ],
   "restaurants": [
     "Grand Central Market",
@@ -338,7 +341,9 @@
     "Mae Malai Thai House of Noodles",
     "Lawry's House of Prime Rib",
     "Westfield Century City",
-    "Two Rodeo"
+    "Two Rodeo",
+    "Cedar Glen Malt Shop",
+    "Seven Grams"
   ],
   "desserts": [
     "Oakobing",
