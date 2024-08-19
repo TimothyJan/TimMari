@@ -48,6 +48,7 @@ export class CarouselComponent implements OnInit, AfterViewInit {
     "2024-07-22": 5,
     "2024-08-03": 1,
     "2024-08-10": 6,
+    "2024-08-11": 6,
   }
 
   constructor() { }
