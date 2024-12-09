@@ -7,6 +7,7 @@ import { SocialLink } from '../../models/social-link';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
+  currentYear = new Date().getFullYear();
   links = new Array<SocialLink>;
 
   ngOnInit(): void {

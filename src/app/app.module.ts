@@ -17,6 +17,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DateGeneratorComponent } from './components/date-generator/date-generator.component';
 import { WheelComponent } from './components/wheel/wheel.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { WheelComponent } from './components/wheel/wheel.component';
     ReactiveFormsModule,
     MaterialModule,
     HttpClientModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
