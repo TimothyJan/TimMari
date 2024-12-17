@@ -18,11 +18,13 @@ export class SideNavComponent {
     this.checkScreenSize();
   }
 
+  /**On screen resizes check screen size */
   @HostListener('window:resize', ['$event'])
   onResize(event:any) {
     this.checkScreenSize();
   }
 
+  /** Check screensize to determine large or small screen */
   checkScreenSize() {
     this.isLargeScreen = window.innerWidth > 768; // Adjust breakpoint as needed
   }

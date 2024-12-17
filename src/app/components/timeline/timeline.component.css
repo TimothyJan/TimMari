@@ -1,3 +1,85 @@
+.timeline-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.timeline-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem 0rem 1rem 1rem;
+  scroll-behavior: smooth;
+}
+
+.timeline-container::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+.timeline-container::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 0.25rem;
+}
+
+.timeline-container::-webkit-scrollbar-track {
+  background: rgba(225, 225, 225, 0.5);
+}
+
+.month-navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 5;
+  overflow-y: auto;
+  font-size: small;
+  height: 100vh;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center months vertically */
+  color: var(--secondary-color);
+}
+
+.hover-cursor {
+  cursor: pointer;
+}
+
+.month-navigation button,
+.month-navigation .month-indicator {
+  margin: 0.5rem 0; /* Ensure space between items */
+}
+
+.month-navigation button {
+  background-color: var(--accent-color);
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+  width: 100%; /* Make buttons full-width to fill the container */
+}
+
+.month-navigation button:hover {
+  background-color: var(--bgColor);
+}
+
+.month-navigation .month-indicator {
+  width: 1rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin: 0.25rem auto;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.month-navigation .month-indicator:hover {
+  background-color: var(--accent-color);
+}
+
 ul {
   --col-gap: 2rem;
   --row-gap: 2rem;
@@ -12,7 +94,6 @@ ul {
   padding-top: 12px;
 }
 
-/* line */
 ul::before {
   content: "";
   grid-column: 1;
@@ -21,14 +102,10 @@ ul::before {
   border-radius: calc(var(--line-w) / 2);
 }
 
-/* columns*/
-
-/* row gaps */
 ul li:not(:last-child) {
   margin-bottom: var(--row-gap);
 }
 
-/* card */
 ul li {
   grid-column: 2;
   --inlineP: 1.5rem;
@@ -38,7 +115,6 @@ ul li {
   grid-template-rows: min-content min-content min-content;
 }
 
-/* date */
 ul li .date {
   --dateH: 3rem;
   height: var(--dateH);
@@ -58,7 +134,6 @@ ul li .date {
   border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
 }
 
-/* date flap */
 ul li .date::before {
   content: "";
   width: var(--inlineP);
@@ -72,7 +147,6 @@ ul li .date::before {
   right: 0;
 }
 
-/* circle */
 ul li .date::after {
   content: "";
   position: absolute;
@@ -87,25 +161,25 @@ ul li .date::after {
   right: calc(100% + var(--col-gap) + var(--line-w) / 2);
 }
 
-/* title descr */
 ul li .title,
 ul li .descr {
   background: var(--bgColor);
   position: relative;
   padding-inline: 1.5rem;
 }
+
 ul li .title {
   overflow: hidden;
   padding-block-start: 1.5rem;
   padding-block-end: 1rem;
   font-weight: 500;
 }
+
 ul li .descr {
   padding-block-end: 1.5rem;
   font-weight: 300;
 }
 
-/* shadows */
 ul li .title::before,
 ul li .descr::before {
   content: "";
@@ -118,6 +192,7 @@ ul li .descr::before {
   filter: blur(4px);
   transform: translate(-50%, 50%);
 }
+
 ul li .title::before {
   bottom: calc(100% + 0.125rem);
 }
@@ -141,7 +216,6 @@ ul li .descr::before {
     grid-column: 3;
   }
 
-  /* start second card */
   ul li:nth-child(2) {
     grid-row: 2/4;
   }
@@ -160,3 +234,13 @@ ul li .descr::before {
   }
 }
 
+.month-section {
+  margin: 2rem 0;
+}
+
+.month-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}

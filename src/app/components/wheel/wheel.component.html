@@ -11,13 +11,22 @@
   </div>
 
   <div class="wheel" [style.transform]="wheelTransform">
-    <div class="segment" *ngFor="let option of options; let i = index" [style.transform]="'rotate(' + (i * segmentAngle) + 'deg)'">
+    <div class="segment"
+      *ngFor="let option of options; let i = index"
+      [style.backgroundColor]="segmentColors[i % segmentColors.length]"
+      [style.transform]="'rotate(' + (i * segmentAngle) + 'deg)'">
       <div class="segment-text">{{ option }}</div>
     </div>
   </div>
   <div class="wheel-bottom">
     <div class="spin-button-container">
-      <button class="spin-button" (click)="spin()">Spin the Wheel</button>
+      <button
+        class="spin-button"
+        aria-label="Spin the Wheel"
+        [disabled]="spinning"
+        (click)="spin()">
+        Spin the Wheel
+      </button>
     </div>
   </div>
 

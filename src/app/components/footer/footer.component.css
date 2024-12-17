@@ -9,7 +9,7 @@
   -ms-flex-align: center;
   align-items: center;
   padding: 6px 12px;
-  background-color: #B4CFEC;
+  background-color: var(--primary-color);
 }
 
 .footer_copyright {

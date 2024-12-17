@@ -1,9 +1,9 @@
 
 .header {
-  padding-top: 48px;
+  padding-top: 12px;
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 24px;
+  padding-bottom: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,7 +13,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #B4CFEC;
+  background-color: var(--primary-color);
 }
 
 .title {

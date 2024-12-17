@@ -1,11 +1,24 @@
+<div class="timeline-wrapper">
+  <div class="month-navigation">
+    <div *ngFor="let month of months; let i = index">
+      <span class="hover-cursor" (click)="scrollToMonth(month)">
+        {{ month }}
+      </span>
+    </div>
+  </div>
+  <div class="timeline-container">
+    <div *ngFor="let month of months" id="{{month}}" class="month-section">
+      <h2 class="month-title">{{ month }}</h2>
+      <ul>
+        <li *ngFor="let item of groupedTimeline[month]; index as i">
+          <div class="date" [style.background]="colorList[i]">{{ item.date | date }}</div>
 
-<ul>
-  <li *ngFor="let item of dataList; index as i">
-    <div class="date" [style.background]="colorList[i]">{{ item.date | date }}</div>
-    <app-carousel
-      [date]="item.date">
-    </app-carousel>
-    <div class="title">{{ item.title }}</div>
-    <div class="descr">{{ item.summary }}</div>
-  </li>
-</ul>
+          <app-carousel [date]="item.date"></app-carousel>
+
+          <div class="title">{{ item.title }}</div>
+          <div class="descr">{{ item.summary }}</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

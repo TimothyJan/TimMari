@@ -2,10 +2,18 @@
   <div class="slide" *ngFor="let item of items">
     <img [src]="item.imageUrl" alt="Slide {{ item.id }}">
   </div>
-  <div *ngIf="items.length>1" class="prev" (click)="prevSlide()">
+
+  <div
+    *ngIf="items.length>1"
+    class="prev"
+    (click)="prevSlide()">
     <span>&#10094;</span>
   </div>
-  <div *ngIf="items.length>1" class="next" (click)="nextSlide()">
+
+  <div
+    *ngIf="items.length>1"
+    class="next"
+    (click)="nextSlide()">
     <span>&#10095;</span>
   </div>
 </div>

@@ -15,6 +15,8 @@ export class WheelComponent implements OnInit {
   segmentAngle: number = 0;
   wheelTransform: string = '';
   spinning: boolean = false;
+  segmentColors: string = "";
+  colors: any;
 
   constructor() {}
 
@@ -25,22 +27,7 @@ export class WheelComponent implements OnInit {
     this.setSegmentAngle();
   }
 
-  spin() {
-    if (this.spinning) {
-      return;
-    }
-    this.spinning = true;
-    const randomDegree = Math.floor(Math.random() * 360) + 3600; // At least 10 spins
-    this.wheelTransform = `rotate(${randomDegree}deg)`;
-
-    setTimeout(() => {
-      this.spinning = false;
-      const normalizedDegree = randomDegree % 360;
-      const winningIndex = Math.floor((normalizedDegree + this.segmentAngle / 2) % 360 / this.segmentAngle);
-      alert('Winning Option: ' + this.options[winningIndex]);
-    }, 5000); // Match the duration of the CSS transition
-  }
-
+  /** Set Title based off category */
   setTitle() {
     switch(this.category) {
       case "activities":
@@ -61,6 +48,7 @@ export class WheelComponent implements OnInit {
     }
   }
 
+  /** Set WasaPon image based off category */
   setImage() {
     switch(this.category) {
       case "activities":
@@ -81,6 +69,7 @@ export class WheelComponent implements OnInit {
     }
   }
 
+  /** Set option based off category */
   setOptions() {
     switch(this.category) {
       case "activities":
@@ -105,8 +94,30 @@ export class WheelComponent implements OnInit {
     }
   }
 
+  /** Set segment angle */
   setSegmentAngle() {
     this.segmentAngle = 360 / this.options.length;
+  }
+
+  /** Calculate winning index */
+  calculateWinningIndex(normalizedDegree: number): number {
+    return Math.floor((normalizedDegree + this.segmentAngle / 2) % 360 / this.segmentAngle);
+  }
+
+  /** Spin wheel */
+  async spin() {
+    if (this.spinning) return;
+
+    this.spinning = true;
+    const randomDegree = Math.floor(Math.random() * 360) + 3600;
+    this.wheelTransform = `rotate(${randomDegree}deg)`;
+
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+
+    this.spinning = false;
+    const normalizedDegree = randomDegree % 360;
+    const winningIndex = this.calculateWinningIndex(normalizedDegree);
+    alert('Winning Option: ' + this.options[winningIndex]);
   }
 
 }

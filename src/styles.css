@@ -5,20 +5,29 @@
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
 @import 'https://fonts.googleapis.com/css?family=Forum';
 
+:root {
+  --sidenav-width: 300px;
+  --primary-color: #B4CFEC;
+  --secondary-color: #839AB0;
+  --accent-color-1: #F4A6A6;
+  --accent-color-2: #F3D9A4;
+  --background-color: #1A1A2E;
+  --card-background-color: #2E2E4D;
+  --text-color: #E8E8E8;
+  --muted-text-color: #A1A1A1;
+  --highlight-color: #B4CFEC;
+}
+
 body, html {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fff;
+  background-color: var(--background-color);
   color: #444452;
   font-family: Apercu,"Source Sans Pro",system,system-ui,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
   line-height: 1.5;
   width: 100%;
-}
-
-:root {
-  --sidenav-width: 300px;
 }
 
 a {

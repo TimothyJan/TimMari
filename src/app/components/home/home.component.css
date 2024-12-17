@@ -2,7 +2,7 @@
   line-height: 1;
   margin: 28px 0px;
   font-family: Cormorant;
-  color: black;
+  color: var(--primary-color);
   font-size: 32px;
   font-weight: normal;
   text-transform: uppercase;
@@ -20,6 +20,11 @@
   height: auto;
 }
 
+.home-item img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
 .wedding-container {
   display: flex;
   flex-direction: column;
@@ -35,6 +40,7 @@
   letter-spacing: 0em;
   white-space: pre-wrap;
   margin: 0.5rem;
+  color: var(--primary-color);
 }
 
 .wedding-location {
@@ -46,6 +52,7 @@
   letter-spacing: 0em;
   margin-top: 2rem;
   margin: 0.5rem;
+  color: var(--secondary-color);
 }
 
 .paragraph-container {
@@ -61,13 +68,13 @@
   font-size: 1.0625rem;
   line-height: 1.8;
   letter-spacing: 0.01em;
-  margin-top: 3rem;
   max-width: 500px;
   text-align: center;
+  padding: 1rem;
+  color: var(--secondary-color);
 }
 
 .paragraph-item {
-  /* display: flex; */
   align-items: center;
   max-width: 630px;
   text-align: center;
@@ -92,9 +99,12 @@ ul {
   list-style-position: inside;
   padding-left: 0;
   margin-left: 0;
+  padding: 1rem;
+  color: var(--secondary-color);
+  border-radius: 8px;
 }
 
 li {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }

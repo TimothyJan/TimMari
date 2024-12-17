@@ -27,6 +27,7 @@ export class CarouselComponent implements OnInit, AfterViewInit {
     this.showSlides(this.currentIndex);
   }
 
+  /** Show slides on Carousel */
   showSlides(index: number) {
     const slides = this.carousel.nativeElement.getElementsByClassName('slide');
     if (index >= slides.length) {
@@ -35,20 +36,18 @@ export class CarouselComponent implements OnInit, AfterViewInit {
     if (index < 0) {
       this.currentIndex = slides.length - 1;
     }
-    for (let i = 0; i < slides.length; i++) {
-      const slide = slides[i] as HTMLElement;
-      if (i === this.currentIndex) {
-        slide.style.display = 'block';
-      } else {
-        slide.style.display = 'none';
-      }
-    }
+    Array.from(slides).forEach((slide, i) => {
+      const slideEl = slide as HTMLElement;
+      slideEl.classList.toggle('active', i === this.currentIndex);
+    });
   }
 
+  /** Next slide by increasing index */
   nextSlide() {
     this.showSlides(++this.currentIndex);
   }
 
+  /** Previous slide by increasing index */
   prevSlide() {
     this.showSlides(--this.currentIndex);
   }
