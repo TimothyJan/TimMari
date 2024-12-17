@@ -172,7 +172,12 @@
     "Lake Arrowhead",
     "Ontario Mills",
     "Shopping",
-    "Walk around house"
+    "Walk around house",
+    "Apartment tours",
+    "Target",
+    "Sam's Club",
+    "The Getty Villa",
+    "UC Los Angeles tour"
   ],
   "restaurants": [
     "Grand Central Market",
@@ -376,7 +381,10 @@
     "Lanzhou Beef Noodles",
     "Boiling Point",
     "Jang Su Jang",
-    "Jidaya Ramen"
+    "Jidaya Ramen",
+    "Pinocchio's Pizza",
+    "Sunnin Lebanese Cafe",
+    "Mugimaru + Toritetsu"
   ],
   "desserts": [
     "Oakobing",
@@ -449,7 +457,9 @@
     "BJ's pizookie",
     "Warabimochi Kamakura",
     "Kang Kang Shaved Ice",
-    "Okrumong"
+    "Okrumong",
+    "Saffron & Rose Ice Cream",
+    "Odd One Out"
   ],
   "hikes": [
     "Eaton Canyon Trail",
@@ -501,6 +511,5 @@
     "Hermit Gultch Trail"
   ],
   "movies": [
-
   ]
 }
