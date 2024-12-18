@@ -100,5 +100,6 @@ mat-sidenav {
 
   a, a:visited, a:hover, a:active {
     color: inherit;
+    color: var(--secondary-color);
   }
 }

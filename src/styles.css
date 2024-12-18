@@ -16,6 +16,8 @@
   --text-color: #E8E8E8;
   --muted-text-color: #A1A1A1;
   --highlight-color: #B4CFEC;
+  --max-width: 393px;
+  /* --min-width: 768px; */
 }
 
 body, html {

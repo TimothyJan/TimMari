@@ -17,6 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { DateGeneratorComponent } from './components/date-generator/date-generator.component';
 import { WheelComponent } from './components/wheel/wheel.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MonthPipe } from './pipes/month.pipe';
+import { MonthMinPipe } from './pipes/month-min.pipe';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CarouselComponent,
     DateGeneratorComponent,
     WheelComponent,
+    MonthPipe,
+    MonthMinPipe,
   ],
   imports: [
     BrowserModule,

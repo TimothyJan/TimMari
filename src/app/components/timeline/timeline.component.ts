@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import * as timelineData from '../../../assets/timeline.json';
 import { TimeLineDesc } from '../../models/timeline-desc';
 import { trigger, transition, style, animate } from '@angular/animations';
+import { MonthPipe } from '../../pipes/month.pipe';
 
 @Component({
   selector: 'app-timeline',
@@ -23,13 +24,27 @@ export class TimelineComponent implements OnInit{
   groupedTimeline: { [key: string]: TimeLineDesc[] } = {};
   months: string[] = [];
 
+  isLargeScreen: boolean = true;
+
   ngOnInit(): void {
     this.organizeDataList();
     this.groupedTimeline = this.groupDataByMonth();
     this.months = Object.keys(this.groupedTimeline);
+    this.checkScreenSize();
   }
 
   constructor() {}
+
+  /**On screen resizes check screen size */
+  @HostListener('window:resize', ['$event'])
+  onResize(event:any) {
+    this.checkScreenSize();
+  }
+
+  /** Check screensize to determine large or small screen */
+  checkScreenSize() {
+    this.isLargeScreen = window.innerWidth > 768; // Adjust breakpoint as needed
+  }
 
   /** Choose Pastel colors */
   getPastelColorStyle(): string {

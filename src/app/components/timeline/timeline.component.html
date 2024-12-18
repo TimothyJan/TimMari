@@ -1,8 +1,11 @@
 <div class="timeline-wrapper">
   <div class="month-navigation">
     <div *ngFor="let month of months; let i = index">
-      <span class="hover-cursor" (click)="scrollToMonth(month)">
-        {{ month }}
+      <span *ngIf="isLargeScreen" class="hover-cursor" (click)="scrollToMonth(month)">
+        {{ month | month }}
+      </span>
+      <span *ngIf="!isLargeScreen" class="hover-cursor" (click)="scrollToMonth(month)">
+        {{ month | monthMin }}
       </span>
     </div>
   </div>
