@@ -177,7 +177,18 @@
     "Target",
     "Sam's Club",
     "The Getty Villa",
-    "UC Los Angeles tour"
+    "UC Los Angeles tour",
+    "Sunken City",
+    "Grand Canyon",
+    "Lower Antelope Canyon",
+    "Horseshoe Bend",
+    "Gingerbread assembly",
+    "Monument Valley",
+    "Las Vegas",
+    "Fremont Street Experience",
+    "Casino",
+    "Seven Magic Mountain",
+    "O by Cirque du Soleil"
   ],
   "restaurants": [
     "Grand Central Market",
@@ -384,7 +395,22 @@
     "Jidaya Ramen",
     "Pinocchio's Pizza",
     "Sunnin Lebanese Cafe",
-    "Mugimaru + Toritetsu"
+    "Mugimaru + Toritetsu",
+    "Zinc Cafe & Bar",
+    "LAN Noodles",
+    "Tofu King",
+    "KFC",
+    "Ragin Cajun Cafe",
+    "Mr D'z Route 66 Diner",
+    "Big E Steakhouse & Saloon",
+    "Big John's Texas BBQ",
+    "Denny's",
+    "Freddies",
+    "Tacos El Gordo",
+    "Bacchanal Buffet",
+    "Gordon Ramsay Fish & Chips",
+    "Fishing Boat",
+    "Seafood Palace"
   ],
   "desserts": [
     "Oakobing",
@@ -459,7 +485,8 @@
     "Kang Kang Shaved Ice",
     "Okrumong",
     "Saffron & Rose Ice Cream",
-    "Odd One Out"
+    "Odd One Out",
+    "Capri Gelato & Coffee Bar"
   ],
   "hikes": [
     "Eaton Canyon Trail",
@@ -508,7 +535,8 @@
     "Sentinel Dome and Taft Point Loop",
     "Sentinel Dome Trail",
     "Taft Point Trail",
-    "Hermit Gultch Trail"
+    "Hermit Gultch Trail",
+    "Goulding Arch"
   ],
   "movies": [
   ]
